@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/bootstrap-entry.css">
+
+    <style>
+      html, body {
+        color: white;
+      }
+
+      main {
+        width: 100%;
+        height: 100%;
+        background: #0f6674;
+      }
+
+      .container {
+        outline: 1px solid white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 100%;
+
+      }
+    </style>
+</head>
+<body>
+    <main>
+      <div id="root" class="container text-center"></div>
+    </main>
+
+    <script type="module">
+        import Page from './src/pages/profile.js';
+
+        const profile = new Page();
+        const root = document.getElementById('root');
+
+        root.append(profile.element);
+    </script>
+</body>
+</html>

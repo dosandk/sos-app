@@ -1,0 +1,106 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    background-color: #f5f5f5;
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+#map {
+    height: 12rem;
+}
+
+.container {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+.pictograms {
+    padding-right: 35px;
+    padding-left: 35px;
+}
+
+.pic {
+    font-size: 1rem;
+    border: 2px solid red;
+    background-color: white;
+    padding: 8px 12px;
+}
+
+.modal-content {
+    align-items: center;
+}
+
+.modal-header {
+    border: 0;
+}
+
+.modal-footer {
+    border: 0;
+}
+
+
+.form-signin {
+    width: 100%;
+    margin: auto;
+    padding: 15px;
+    max-width: 330px;
+}
+
+.logo {
+    font-size: 5em;
+}
+
+p {
+    font-weight: 200;
+}
+
+.sosButton {
+    padding: 5rem;
+}
+
+.myProfile {
+    width: 100%;
+    margin: auto;
+}
+
+.question {
+    font-size: 1.5rem;
+}
+
+.bi-star {
+    font-size: 3rem;
+}
+
+.form-control {
+    text-align: center;
+}
+
+.helperTimer {
+    font-size: 2rem
+}
+
+.avatar {
+    height: 8rem;
+}
+
+
+@media screen and (max-height: 600px) {
+    .pic {
+        padding: 5px 8px;
+    }
+
+    .btn {
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+    }
+}

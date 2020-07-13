@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+          integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./../style.css">
+
+    <script src='https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.css' rel='stylesheet' />
+
+    <title>2. YOU'RE HELPING</title>
+</head>
+<body class="text-center">
+
+    <div class="container">
+
+        <div id="map" class="container mb-3">
+
+            <script>
+                mapboxgl.accessToken = 'pk.eyJ1IjoiYXJyaWVlIiwiYSI6ImNrY2dhYXRveDBub3IyeHBmaTNnczU4eWUifQ.-lQ57e3HV5PLyfY6fm-W8A';
+                var map = new mapboxgl.Map({
+                    container: 'map',
+                    style: 'mapbox://styles/mapbox/streets-v11', // stylesheet location
+                    center: [-74.5, 40], // starting position [lng, lat]
+                    zoom: 9 // starting zoom
+                });
+            </script>
+
+
+
+        </div>
+
+        <p class="helperTimer font-weight-bold mb-0">9:10</p>
+
+        <hr>
+
+        <p class="mb-0">You are helping</p>
+
+        <img src="../myProfile/avatar.jpg" alt="avatar" class="rounded-circle mx-auto d-block img-thumbnail">
+        <p class="mt-1 mb-1">Eve Ziomek</p>
+        <p class="mt-1 mb-1 font-weight-bold">+380 (99) 114 36 74</p>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+    </script>
+</body>
+</html>
