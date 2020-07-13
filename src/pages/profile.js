@@ -1,9 +1,13 @@
 export default class Page {
   element;
+  subElements = {};
 
-  constructor() {
-    console.error('profile');
+  constructor(navigateCallback) {
+    this.navigate = navigateCallback;
+
     this.render();
+    this.getSubElements();
+    this.initEventListeners();
   }
 
   render() {
@@ -31,14 +35,27 @@ export default class Page {
 
         </div>
 
-        <button type="button" class="btn sos-button btn-danger rounded-circle">SOS</button>
+        <button type="button" data-id="sosBtn" class="btn sos-button btn-danger rounded-circle">SOS</button>
       </div>
     `;
 
     this.element = element.firstElementChild;
   }
 
-  initEventListeners() {
+  getSubElements () {
+    const elements = this.element.querySelectorAll('[data-id]');
 
+    for (const element of elements) {
+      this.subElements[element.dataset.id] = element;
+    }
+  }
+
+  initEventListeners() {
+    const { sosBtn } = this.subElements;
+
+    sosBtn.addEventListener('click', event => {
+      // replace content of root element
+      this.navigate();
+    });
   }
 }

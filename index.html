@@ -38,9 +38,14 @@
 
     <script type="module">
         import Page from './src/pages/profile.js';
+        import ConfirmPage from './src/pages/confirm.js';
 
-        const profile = new Page();
         const root = document.getElementById('root');
+        const confirmPage = new ConfirmPage();
+        const profile = new Page(() => {
+          root.innerHTML = '';
+          root.append(confirmPage.element);
+        });
 
         root.append(profile.element);
     </script>
