@@ -37,12 +37,12 @@
     </main>
 
     <script type="module">
-        import Page from './src/pages/profile.js';
+        import ProfilePage from './src/pages/profile.js';
         import ConfirmPage from './src/pages/confirm.js';
 
         const root = document.getElementById('root');
         const confirmPage = new ConfirmPage();
-        const profile = new Page(() => {
+        const profile = new ProfilePage(() => {
           root.innerHTML = '';
           root.append(confirmPage.element);
         });

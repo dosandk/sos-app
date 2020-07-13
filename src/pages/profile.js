@@ -1,4 +1,4 @@
-export default class Page {
+export default class ProfilePage {
   element;
   subElements = {};
 
@@ -53,7 +53,7 @@ export default class Page {
   initEventListeners() {
     const { sosBtn } = this.subElements;
 
-    sosBtn.addEventListener('click', event => {
+    sosBtn.addEventListener('click', () => {
       // replace content of root element
       this.navigate();
     });
