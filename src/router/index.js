@@ -11,7 +11,8 @@ export default class Router {
       const { target } = event;
       const link = target.closest('a');
 
-      if (link) {
+      // additional checking if this button is router button
+      if (link && link.className === 'router') {
         const href = link.getAttribute('href');
 
         if (href.startsWith('/')) {

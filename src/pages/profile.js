@@ -10,11 +10,11 @@ export default class ProfilePage {
 
     element.innerHTML = `
       <div>
-        <div style="height: 200px;">
+        <div>
             <img src="https://via.placeholder.com/150" alt="avatar" class="rounded-circle img-thumbnail">
         </div>
 
-        <p class="mt-1 mb-3">Eve Ziomek</p>
+        <p class="mt-2 mb-3">Eve Ziomek</p>
         <p class="mt-3 mb-0 font-weight-bold">Reputation</p>
 
         <div>
@@ -30,7 +30,7 @@ export default class ProfilePage {
 
         </div>
 
-        <a href="/confirm">
+        <a class="router" href="/confirm">
             <button type="button" data-id="sosBtn" class="btn sos-button btn-danger rounded-circle">SOS</button>
         </a>
       </div>
