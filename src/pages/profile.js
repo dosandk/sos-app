@@ -1,13 +1,8 @@
 export default class ProfilePage {
   element;
-  subElements = {};
 
-  constructor(navigateCallback) {
-    this.navigate = navigateCallback;
-
+  constructor() {
     this.render();
-    this.getSubElements();
-    this.initEventListeners();
   }
 
   render() {
@@ -35,27 +30,12 @@ export default class ProfilePage {
 
         </div>
 
-        <button type="button" data-id="sosBtn" class="btn sos-button btn-danger rounded-circle">SOS</button>
+        <a href="/confirm">
+            <button type="button" data-id="sosBtn" class="btn sos-button btn-danger rounded-circle">SOS</button>
+        </a>
       </div>
     `;
 
     this.element = element.firstElementChild;
-  }
-
-  getSubElements () {
-    const elements = this.element.querySelectorAll('[data-id]');
-
-    for (const element of elements) {
-      this.subElements[element.dataset.id] = element;
-    }
-  }
-
-  initEventListeners() {
-    const { sosBtn } = this.subElements;
-
-    sosBtn.addEventListener('click', () => {
-      // replace content of root element
-      this.navigate();
-    });
   }
 }
