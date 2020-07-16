@@ -4,6 +4,7 @@ export default class Router {
   constructor (routes) {
     this.routes = routes;
     this.initEventListeners();
+    this.renderPage(window.location.pathname);
   }
 
   initEventListeners () {
