@@ -16,10 +16,11 @@ import { firebase } from './firebase.js';
 console.error('firebase', firebase);
 
 const router = new Router({
-  '/': new LoginPage(),
-  '/profile': new ProfilePage(),
-  '/confirm': new ConfirmPage(),
-  '/waiting': new WaitingForHelpPage()
+  '/sos-app': new LoginPage(),
+  '/sos-app/': new LoginPage(),
+  '/sos-app/profile': new ProfilePage(),
+  '/sos-app/confirm': new ConfirmPage(),
+  '/sos-app/waiting': new WaitingForHelpPage()
 });
 
 // const root = document.getElementById('root');

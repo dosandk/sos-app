@@ -30,7 +30,7 @@ export default class ProfilePage {
 
         </div>
 
-        <a class="router" href="/confirm">
+        <a class="router" href="/sos-app/confirm">
             <button type="button" data-id="sosBtn" class="btn sos-button btn-danger rounded-circle">SOS</button>
         </a>
       </div>

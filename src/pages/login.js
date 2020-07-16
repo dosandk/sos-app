@@ -15,7 +15,7 @@ export default class LoginPage {
     element.innerHTML = `
       <div>
         <h1>Login Page</h1>
-        <a class="router" href="/profile">
+        <a class="router" href="/sos-app/profile">
           <div data-id="navigationBtn">Go to next page</div>
         </a>
       </div>

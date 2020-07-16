@@ -54,7 +54,8 @@ module.exports = {
       'process.env.storageBucket': JSON.stringify(process.env.storageBucket),
       'process.env.messagingSenderId': JSON.stringify(process.env.messagingSenderId),
       'process.env.appId': JSON.stringify(process.env.appId),
-      'process.env.measurementId': JSON.stringify(process.env.measurementId)
+      'process.env.measurementId': JSON.stringify(process.env.measurementId),
+      'process.env.PUBLIC_PATH': JSON.stringify(process.env.PUBLIC_PATH)
     }),
     new HtmlWebpackPlugin({
       template: path.join(__dirname, '../src/index.html')

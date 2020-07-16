@@ -10,7 +10,7 @@ module.exports = merge(common, {
     port: 9002,
     hot: true,
     compress: true,
-    publicPath: '/',
+    publicPath: '/sos-app/',
     contentBase: path.join(__dirname, '../dist'),
     historyApiFallback: true,
     writeToDisk: true,
